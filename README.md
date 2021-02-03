@@ -277,7 +277,7 @@ $ python -m awscli configure
 ## Step 4. Testing, Building, Staging, and Production 
 
 ### Part 1. Create CI/CD pipelines using Jenkins
-   [Jenkinsfile]()
+   [Jenkinsfile](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/Jenkinsfile)
    
    ![new vm](./manual/jenkins/1.png)
    
