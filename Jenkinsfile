@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script{
                     //sh 'BUILD_NUMBER = ${BUILD_NUMBER}'
-                    if (BUILD_NUMBER == "2") {
+                    if (BUILD_NUMBER == "3") {
                         sh 'docker run --name $CONTAINER_NAME -d -p 9090:9090 $DOCKER_HUB_REPO'
                     }
                     else {
