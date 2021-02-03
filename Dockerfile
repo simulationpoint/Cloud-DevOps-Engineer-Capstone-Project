@@ -1,9 +1,21 @@
-FROM python:3.7-alpine
-WORKDIR /code
-ENV FLASK_APP app.py
-ENV FLASK_RUN_HOST 0.0.0.0
-RUN apk add --no-cache gcc musl-dev linux-headers
-COPY requirements.txt requirements.txt
+# Program: Dockerfile -> build images 
+# Name: Jesh Amera
+# Date created: 02/02/2021
+
+FROM ubuntu:16.04
+
+RUN apt-get update -y && \
+    apt-get install -y python-pip python-dev
+
+COPY ./requirements.txt /app/requirements.txt
+
+WORKDIR /app
+
 RUN pip install -r requirements.txt
-COPY . .
-CMD ["flask", "run"]
+
+EXPOSE 9090
+
+COPY . /app
+
+ENTRYPOINT [ "python" ]
+CMD [ "web.py" ]
