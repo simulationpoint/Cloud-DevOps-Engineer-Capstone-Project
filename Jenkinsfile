@@ -5,7 +5,7 @@ pipeline {
     agent any
     environment {        
 	DOCKER_HUB_REPO = "211896/jesh_docker_image"
-	REGISTRY_CREDENTIAL = "DockerHub"
+	REGISTRY_CREDENTIAL = "dockerhub"
         CONTAINER_NAME = "jesh-final"
         STUB_VALUE = "200"
     }
@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script{
                     //sh 'BUILD_NUMBER = ${BUILD_NUMBER}'
-                    if (BUILD_NUMBER == "3") {
+                    if (BUILD_NUMBER == "5") {
                         sh 'docker run --name $CONTAINER_NAME -d -p 9090:9090 $DOCKER_HUB_REPO'
                     }
                     else {
