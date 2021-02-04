@@ -309,7 +309,7 @@ $ python -m awscli configure
 
 
 ## Summary
-* The most challenging part was ansible configuration, and not having enough time to study the materail and put it togethr.The way I have prepared was and the project requirment are diffrent.
+* The most challenging part was ansible configuration,I have installed it natively to my local machine. Also not having enough time to study the materail and put it togethr.The way I have prepared was and the project requirment are diffrent.
    
 
 
