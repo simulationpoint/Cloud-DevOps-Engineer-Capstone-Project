@@ -5,12 +5,12 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata: 
-  name: jesh-kubernetes-app-deployment
+  name: jesh-kubernetes-app-deployment2
 spec:
   selector:
     matchLabels:
       app: kubernetesapp
-  replicas: 3 
+  replicas: 5 
   template:
     metadata:
       labels:
@@ -25,7 +25,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: jesh-kubernetes-app-service
+  name: jesh-kubernetes-app-service2
 spec:
   type: NodePort
   selector:
@@ -37,7 +37,3 @@ spec:
       nodePort: 31896
 # part of this script is inspired by the template found https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 # https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/
-<<<<<<< HEAD
-=======
-
->>>>>>> 2cefd4067d5882a26c49d2bd571862cd28ebee2d
