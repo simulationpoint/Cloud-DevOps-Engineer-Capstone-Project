@@ -289,6 +289,9 @@ $ python -m awscli configure
 ### Part 2.
 
 * Create an EC2 instance of the VM and launch the service
+> Run it anywhere, anytime, as long as you have able to connect to the internet !!
+![OutPut](./src/kubernetes/21.png)  
+
 
 
 ## Summary
