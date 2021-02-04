@@ -14,7 +14,6 @@
 	 ```
 	 Click New
 	 ```
-	
 	 ![new vm](./src/figure/1vm-new.png)
 	 
 	 ```
@@ -22,7 +21,6 @@
 	 Type: Linux
 	 Version: Ubuntu(64-bit)
 	 ```
-	 
 	 ![new vm](./src/figure/2vm-name.png)
 	 
 	 ```
