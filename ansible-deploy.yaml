@@ -1,0 +1,28 @@
+---
+- name: Install python
+hosts: app_server
+become: yes
+become_user: root
+roles:
+  - web.py
+
+- name: Download flask python app from Repo
+hosts: app_server
+tasks:
+  - get_url:
+      force: yes
+      url: "{{ lookup('env','ARTIFACT_URL') }}"
+      dest: "/tmp/{{ lookup('env','APP_NAME') }}.py"
+  - stat:
+      path: "/tmp/{{ lookup('env','APP_NAME') }}.py"
+
+- name: Setup flask app
+hosts: app_server
+become: yes
+become_user: root
+roles:
+  - { role: pellepelster.springboot-role,
+      python-flask-app: "{{ lookup('env','APP_NAME') }}.py",
+      python-flask-app: "/tmp/{{ lookup('env','APP_NAME') }}.py",
+      python-flask-app-id: "{{ lookup('env','APP_NAME') }}"
+  }

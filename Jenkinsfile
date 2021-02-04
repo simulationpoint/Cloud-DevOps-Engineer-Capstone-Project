@@ -33,24 +33,36 @@ pipeline {
                 
                 	echo "Image built and pushed to repository"
 		    }
-	    }
+	      }
         }
-	    stage('deploy in kubernetes') {
-            steps {
-		    script {
-			//  creating kubernetes services/pods
-			// sh 'cd /Users/grand'
-			// sh 'git clone https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project.git' 
-			//sh "minikube start --driver=docker"
-			//sleep 20
-			sh 'kubectl apply -f ~/Cloud-DevOps-Engineer-Capstone-Project/kubernetes.yaml'
-			// sh 'rm -r ~/Cloud-DevOps-Engineer-Capstone-Project'
-                
-                	echo "Image built in minikube"
-		    }
-	    }
-        }
-      
-    }
-}
+        // Deploying the dockerized image of the app in the Kubernetes cluster
+        stage('Deploying') {
+              steps{
+                  echo 'Deploying to kubernetes...'
+                      sh "kubectl apply -f kubernetes.yaml"
+                      sh "kubectl get nodes"
+                      sh "kubectl get deployments"
+                      sh "kubectl get pod -o wide"
+                      sh "kubectl get service/jesh-kubernetes-app-service2"
+                      echo "Image built in minikube"
+                  	}
+              	}
+              	stage('ansible-playbook') {
+              		steps{
+              			sh "ansible-playbook ansible-deploy.yaml"
+              		}
+              	}
+              	// Prune unnecessary docker resources
+         	  stage("Cleaning up") {
+              steps{
+                    echo 'Cleaning up...'
+                    sh "docker system prune"
+                }
+           }
+     }
+ }
+
+
+
+                  
 
