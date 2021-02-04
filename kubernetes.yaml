@@ -37,3 +37,4 @@ spec:
       nodePort: 31896
 # part of this script is inspired by the template found https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 # https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/
+
