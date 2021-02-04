@@ -261,7 +261,8 @@ $ python -m awscli configure
 
 ### Part 1. Create CI/CD pipelines using Jenkins
    [Jenkinsfile](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/Jenkinsfile)
-   
+   * Run the pipeline from Blue Ocean plugin of Jenkins
+
    ![new vm](./src/jenkins/1.png)
    
    ![jenkins-docker-pipeline](./src/jenkins/jenkins-docker-pipeline.png)
