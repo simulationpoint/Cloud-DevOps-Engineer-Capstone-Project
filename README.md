@@ -7,7 +7,7 @@
 * First download and install the free [VirtualBox](https://www.virtualbox.org/) software.
 * Seconed downloade and configure an open source operating system [Ubuntu](https://ubuntu.com/download/desktop/thank-you?version=20.04.1&architecture=amd64/) OS.
 
-	####  Ubuntu 20.04 VM configration and installation
+	> ####  Ubuntu 20.04 VM configration and installation
 	 * Go to Settings and configure **General**, **System**, **Display**, **Network**, and **Shared Folders** accourding to the following screenshot
 
 	 `
