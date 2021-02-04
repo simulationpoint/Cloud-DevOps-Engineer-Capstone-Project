@@ -56,10 +56,10 @@
 	 Processors(s): 2 CPU
 	 Extended Features:
 	 Enable PAE/Nx
-    Acceleration Tab:
-    Hardware Virtualization:
-    Enable VT-x/AMD-V
-    Enable Nested Paging
+	 Acceleration Tab:
+	 Hardware Virtualization:
+	 Enable VT-x/AMD-V
+	 Enable Nested Paging
 	 ```
 	 ![new vm](./src/figure/8vm-processor.png)
 	
@@ -74,12 +74,12 @@
 	 
 	 ```
 	 Network:
-    Adapter 1:
-    Attached to: NAT Network
-    Advanced:
-    Promiscuous Mode: Allow All
-    MAC Address: (click generate new MAC)	 ```
-    ![new vm](./src/figure/10vm-network.png)
+	 Adapter 1:
+	 Attached to: NAT Network
+	 Advanced:
+	 Promiscuous Mode: Allow All
+	 MAC Address: (click generate new MAC)	 ```
+	 ![new vm](./src/figure/10vm-network.png)
 	 
 	 ```
 	 Network:
@@ -103,7 +103,7 @@
 	 `sudo apt install virtualbox-guest-dkms virtualbox-guest-x11`
 	 ![new vm](./src/CP-share/2.png)
 	 
-	 > Reboot the VM and enter the following 
+	 > Reboot the VM and enter the following
 	 
 	 `lsmod | grep vbox`
     ![new vm](./src/CP-share/3.png)
