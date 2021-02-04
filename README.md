@@ -265,7 +265,6 @@ $ python -m awscli configure
    ![new vm](./src/jenkins/1.png)
    
    ![jenkins-docker-pipeline](./src/jenkins/jenkins-docker-pipeline.png)
-   ![jenkins-docker-pipeline](./src/jenkins/jenkins-docker-pipeline.png)
    ![JenkinsConsoleOutPut](./src/jenkins/JenkinsConsoleOutPut.png)
    ![OutPut](./src/jenkins/OutPut.png)
 
