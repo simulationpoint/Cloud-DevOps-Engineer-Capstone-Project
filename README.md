@@ -10,109 +10,107 @@
 
 	####  Ubuntu 20.04 VM configration and installation
 	 * Go to Settings and configure **General**, **System**, **Display**, **Network**, and **Shared Folders** accourding to the following screenshot
-
-	 ```
-	 Click New
-	 ```
+```
+Click New
+```
 	
-	 ![new vm](./src/figure/1vm-new.png)
+![new vm](./src/figure/1vm-new.png)
+	
+```
+Give a name you like and choose 
+Type: Linux
+Version: Ubuntu(64-bit)
+```
+![new vm](./src/figure/2vm-name.png)
 	 
-	 ```
-	 Give a name you like and choose 
-	 Type: Linux
-	 Version: Ubuntu(64-bit)
-	 ```
-	 ![new vm](./src/figure/2vm-name.png)
+```
+Set the RAM 4GB or more - based on your system spec 
+```
+![new vm](./src/figure/4vm-memory.png)
 	 
-	 ```
-	 Set the RAM 4GB or more - based on your system spec 
-	 ```
-	 ![new vm](./src/figure/4vm-memory.png)
+```
+Choose existing virtual hard disk file and create
+```
 	 
-	 ```
-	 Choose existing virtual hard disk file and create
-	 ```
+![new vm](./src/figure/5vm-hard-disk.png)
 	 
-	 ![new vm](./src/figure/5vm-hard-disk.png)
+```
+Go to the Settings
+```
+![new vm](./src/figure/6vm-settings.png)
 	 
-	 ```
-	 Go to the Settings
-	 ```
-	 ![new vm](./src/figure/6vm-settings.png)
-	 
-	 ```
-	 General
-	 Advanced Tab:
-	 Shared Clipboard: Bidirectional
-	 Drag'n'Drop: Bidirectional			
-	 ```
-	 ![new vm](./src/figure/7vm-shared.png)
+```
+General
+Advanced Tab:
+Shared Clipboard: Bidirectional
+Drag'n'Drop: Bidirectional			
+```
+![new vm](./src/figure/7vm-shared.png)
 	  
-	 ```
-	 Motherboard Tab:
-	 Base Memory: 2GB
-	 Extended Feature:  Enable I/O APIC
-	 Processor Tab:
-	 Processors(s): 2 CPU
-	 Extended Features:
-	 Enable PAE/Nx
-	 Acceleration Tab:
-	 Hardware Virtualization:
-	 Enable VT-x/AMD-V
-	 Enable Nested Paging
-	 ```
-	 ![new vm](./src/figure/8vm-processor.png)
+```
+Motherboard Tab:
+Base Memory: 2GB
+Extended Feature:  Enable I/O APIC
+Processor Tab:
+Processors(s): 2 CPU
+Extended Features:
+Enable PAE/Nx
+Acceleration Tab:
+Hardware Virtualization:
+Enable VT-x/AMD-V
+Enable Nested Paging
+```
+![new vm](./src/figure/8vm-processor.png)
 	
-	 ```
-	 Display:
-	 Screen Tab:
-	 Video Memory: 28 MB
-	 Graphic Controller: VMSVGA
-	 Acceleration: Enable 3D Acceleration	 
-	 ```
-	 ![new vm](./src/figure/9vm-display.png)
+```
+Display:
+Screen Tab:
+Video Memory: 28 MB
+Graphic Controller: VMSVGA
+Acceleration: Enable 3D Acceleration	 
+```
+![new vm](./src/figure/9vm-display.png)
 	 
-	 ```
-	 Network:
-	 Adapter 1:
-	 Attached to: NAT Network
-	 Advanced:
-	 Promiscuous Mode: Allow All
-	 MAC Address: (click generate new MAC)	 ```
-	 ![new vm](./src/figure/10vm-network.png)
+```
+Network:
+Adapter 1:
+Attached to: NAT Network
+Advanced:
+romiscuous Mode: Allow All
+MAC Address: (click generate new MAC)
+```
+![new vm](./src/figure/10vm-network.png)
 	 
-	 ```
-	 Network:
-	 Adapter 1:
-	 Attached to: NAT Network
-	 Advanced:
-	 Promiscuous Mode: Allow All
-	 MAC Address: (click generate new MAC)	 ```
-	 ![new vm](./src/figure/11vm-shared-folder.png)
+```
+Shared Folders 
+```
+![new vm](./src/figure/11vm-shared-folder.png)
 	 
-	 ```
-	 Wallah! Click start to fire your VM	 	 ```
-	 ![new vm](./src/figure/12vm-final.png)
+```
+Wallah! Click start to fire your VM	
+```
+![new vm](./src/figure/12vm-final.png)
 	 
-	 ```
-	 Last thing to enable drag and drop, copy and paste, and to share folder betweeen the guest and host
-	 macine run the following comands in your terminal once the vm starts. 	 ```
-	 `sudo add-apt-repository multiverse`
-	 ![new vm](./src/CP-share/1.png)
+```
+Last thing to enable drag and drop, copy and paste, and to share folder betweeen the guest and host
+macine run the following comands in your terminal once the vm starts.
+```
+`sudo add-apt-repository multiverse`
+![new vm](./src/CP-share/1.png)
 	 
-	 `sudo apt install virtualbox-guest-dkms virtualbox-guest-x11`
-	 ![new vm](./src/CP-share/2.png)
+`sudo apt install virtualbox-guest-dkms virtualbox-guest-x11`
+![new vm](./src/CP-share/2.png)
+	
+> Reboot the VM and enter the following
 	 
-	 > Reboot the VM and enter the following
-	 
-	 `lsmod | grep vbox`
-    ![new vm](./src/CP-share/3.png)
+`lsmod | grep vbox`
+![new vm](./src/CP-share/3.png)
     
-    `mkdir -p ~/Share`
-    ![new vm](./src/CP-share/4.png)
-     
- 	 `sudo mount -t vboxsf "your Shared folder name" ~/Share`
- 	 ![new vm](./src/CP-share/5.png)
+`mkdir -p ~/Share`
+ ![new vm](./src/CP-share/4.png)
+    
+ `sudo mount -t vboxsf "your Shared folder name" ~/Share`
+ ![new vm](./src/CP-share/5.png)
  	  
 ## Step 2. Designe, plan, and overview of the project
 
