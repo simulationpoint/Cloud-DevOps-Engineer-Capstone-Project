@@ -96,6 +96,7 @@ Last thing to enable drag and drop, copy and paste, and to share folder betweeen
 macine run the following comands in your terminal once the vm starts.
 ```
 `sudo add-apt-repository multiverse`
+
 ![new vm](./src/CP-share/1.png)
 	 
 `sudo apt install virtualbox-guest-dkms virtualbox-guest-x11`
@@ -108,7 +109,7 @@ macine run the following comands in your terminal once the vm starts.
     
 `mkdir -p ~/Share`
  ![new vm](./src/CP-share/4.png)
-    
+ 
  `sudo mount -t vboxsf "your Shared folder name" ~/Share`
  ![new vm](./src/CP-share/5.png)
  	  
@@ -260,10 +261,10 @@ $ python -m awscli configure
 
 ### Part 1. Create CI/CD pipelines using Jenkins
    [Jenkinsfile](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/Jenkinsfile)
-   
+   * Run the pipeline from Blue Ocean plugin of Jenkins
+
    ![new vm](./src/jenkins/1.png)
    
-   ![jenkins-docker-pipeline](./src/jenkins/jenkins-docker-pipeline.png)
    ![jenkins-docker-pipeline](./src/jenkins/jenkins-docker-pipeline.png)
    ![JenkinsConsoleOutPut](./src/jenkins/JenkinsConsoleOutPut.png)
    ![OutPut](./src/jenkins/OutPut.png)
@@ -278,8 +279,8 @@ $ python -m awscli configure
  ![OutPut](./src/kubernetes/1.png)  
  ![OutPut](./src/kubernetes/2.png)   
    
-### Part 4. Deploy dockerized app in Ansible Tower(AWX)
-[ansible-playbook.yaml](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/kubernetes.yaml)
+### Part 4. Deploying dockerized web app using Ansible as a configuration management tool  
+[ansible-deploy.yaml](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/kubernetes.yaml)
    
 ## Step 4. Cloud implementation in AWS
 ### Part 1.
