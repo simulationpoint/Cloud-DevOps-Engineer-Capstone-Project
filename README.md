@@ -1,4 +1,5 @@
-# Cloud DevOps Engineer Final Capstone Project
+![new vm](./src/intro/1.png)
+![new vm](./src/intro/2.png)
 
 
 ## [Instruction](https://docs.google.com/document/d/17OwlITE-yPWNj3Vi5RtQfz3ItvSkOfnbaVMnzlZyGTg)
@@ -7,12 +8,12 @@
 * First download and install the free [VirtualBox](https://www.virtualbox.org/) software.
 * Seconed downloade and configure an open source operating system [Ubuntu](https://ubuntu.com/download/desktop/thank-you?version=20.04.1&architecture=amd64/) OS.
 
-	> ####  Ubuntu 20.04 VM configration and installation
+	####  Ubuntu 20.04 VM configration and installation
 	 * Go to Settings and configure **General**, **System**, **Display**, **Network**, and **Shared Folders** accourding to the following screenshot
 
-	 `
+	 ```
 	 Click New
-	 `
+	 ```
 	
 	 ![new vm](./src/figure/1vm-new.png)
 	 
@@ -137,21 +138,20 @@
 
  	  
 ## Step 3. Install, run, and configure some DevOps tools
-
-			 Linux Containers
-			 Python Flask App
-			 Maven
-			 Git, GitHub
-			 webhook
-			 Jenkins
-			 Docker
-			 Docker Hub
-			 Kubernetes
-			 minikube
-			 Red Hat Ansible
-			 AWS Cloud Formation
-			 Ansible Tower
-			 AWS(S3,EC2)
+* VirtualBox
+* Linux VM(Ubuntu 20.04)
+* Python Flask App
+* Git, GitHub
+* Webhook
+* Jenkins
+* Docker
+* Docker Hub
+* Kubernetes
+* Minikube
+* Red Hat Ansible
+* AWS Cloud Formation
+* Ansible Tower
+* AWS(S3,EC2)
 
 
 > Install git for Debian/Ubuntu
@@ -281,16 +281,23 @@ $ python -m awscli configure
    
    ![new vm](./src/jenkins/1.png)
    
+   ![jenkins-docker-pipeline](./src/jenkins/jenkins-docker-pipeline.png)
+   ![jenkins-docker-pipeline](./src/jenkins/jenkins-docker-pipeline.png)
+   ![JenkinsConsoleOutPut](./src/jenkins/JenkinsConsoleOutPut.png)
+   ![OutPut](./src/jenkins/OutPut.png)
+
+   
 ### Part 2. Dockerize Jenkins Pipeline
-   * Dockerfile
+[Dockerfile](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/Dockerfile)
+
    
 ### Part 3. Create Kubernetes Cluster 
-   * Kubernetes.yaml 
+[kubernetes.yaml ](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/kubernetes.yaml)
+   
    
 ### Part 4. Deploy dockerized app in Ansible Tower(AWX)
-   * ansible-playbook.yaml
-
-
+[ansible-playbook.yaml](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/kubernetes.yaml)
+   
 ## Step 4. Cloud implementation in AWS
 ### Part 1.
 * Import prebuilt VM to AWS S3 bucket
@@ -301,7 +308,7 @@ $ python -m awscli configure
 
 
 ## Step 5. Summary
-* DevOps is ... 
+* The most challenging part was ansible configuration, and not having enough time to study the materail and put it togethr.The way I have prepared was and the project requirment are diffrent.
    
 
 
