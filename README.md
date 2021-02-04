@@ -290,12 +290,13 @@ $ python -m awscli configure
 
 * Create an EC2 instance of the VM and launch the service
 > Run it anywhere, anytime, as long as you have able to connect to the internet !!
-![OutPut](./src/kubernetes/21.png)  
-
+  
 
 
 ## Summary
 * The most challenging part was ansible configuration,I have installed it natively to my local machine. Also not having enough time to study the materail and put it togethr.The way I have prepared, and the project requirment are diffrent.
+* CI/CD
+* Cloud
    
 
 
