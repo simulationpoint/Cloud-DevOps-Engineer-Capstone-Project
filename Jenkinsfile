@@ -39,7 +39,7 @@ pipeline {
             steps {
 		    script {
 			//  creating kubernetes services/pods
-			sh 'cd ~'
+			sh 'cd ~/Users/grand'
 			sh 'git clone https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project.git' 
 			sh "minikube start --driver=docker"
 			sh 'kubectl apply -f ~/Cloud-DevOps-Engineer-Capstone-Project/kubernetes.yaml'
