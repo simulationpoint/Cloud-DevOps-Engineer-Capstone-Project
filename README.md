@@ -1,20 +1,19 @@
-<link rel="stylesheet" type="text/css" media="all" href="./style.css" />
 # Cloud DevOps Engineer Final Capstone Project
 
 
 ## [Instruction](https://docs.google.com/document/d/17OwlITE-yPWNj3Vi5RtQfz3ItvSkOfnbaVMnzlZyGTg)
 
 ## Step 1. Setup and Configure Linux Virtual Machine
-* First downloade and install the free [VirtualBox](https://www.virtualbox.org/) software.
+* First download and install the free [VirtualBox](https://www.virtualbox.org/) software.
 * Seconed downloade and configure an open source operating system [Ubuntu](https://ubuntu.com/download/desktop/thank-you?version=20.04.1&architecture=amd64/) OS.
 
 	####  Ubuntu 20.04 VM configration and installation
 	 * Go to Settings and configure **General**, **System**, **Display**, **Network**, and **Shared Folders** accourding to the following screenshot
 
-	 ```
-	 	Click New
-	 
-	 ```
+	 `
+	 Click New
+	 `
+	
 	 ![new vm](./manual/figure/1vm-new.png)
 	 
 	  ```
