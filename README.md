@@ -293,7 +293,8 @@ $ python -m awscli configure
    
 ### Part 3. Create Kubernetes Cluster 
 [kubernetes.yaml ](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/kubernetes.yaml)
-   
+ ![OutPut](./src/kubernetes/1.png)  
+ ![OutPut](./src/kubernetes/2.png)   
    
 ### Part 4. Deploy dockerized app in Ansible Tower(AWX)
 [ansible-playbook.yaml](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/kubernetes.yaml)
