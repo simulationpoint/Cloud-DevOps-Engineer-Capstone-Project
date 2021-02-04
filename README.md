@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" media="all" href="./style.css" />
 # Cloud DevOps Engineer Final Capstone Project
 
 
