@@ -35,21 +35,21 @@ pipeline {
 		    }
 	    }
         }
-        stage('Deploy') {
+	    stage('deploy in kubernetes') {
             steps {
-                script{
-                    //sh 'BUILD_NUMBER = ${BUILD_NUMBER}'
-                    if (BUILD_NUMBER == "5") {
-                        sh 'docker run --name $CONTAINER_NAME -d -p 9090:9090 $DOCKER_HUB_REPO'
-                    }
-                    else {
-                        sh 'docker stop $CONTAINER_NAME'
-                        sh 'docker rm $CONTAINER_NAME'
-                        sh 'docker run --name $CONTAINER_NAME -d -p 9090:9090 $DOCKER_HUB_REPO'
-                    }
-                    //sh 'echo "Latest image/code deployed"'
-                }
-            }
+		    script {
+			//  creating kubernetes services/pods
+			// sh 'cd /Users/grand'
+			// sh 'git clone https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project.git' 
+			//sh "minikube start --driver=docker"
+			//sleep 20
+			sh 'kubectl apply -f ~/Cloud-DevOps-Engineer-Capstone-Project/kubernetes.yaml'
+			// sh 'rm -r ~/Cloud-DevOps-Engineer-Capstone-Project'
+                
+                	echo "Image built in minikube"
+		    }
+	    }
         }
+      
     }
 }
