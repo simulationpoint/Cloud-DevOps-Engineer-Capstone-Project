@@ -96,6 +96,7 @@ Last thing to enable drag and drop, copy and paste, and to share folder betweeen
 macine run the following comands in your terminal once the vm starts.
 ```
 `sudo add-apt-repository multiverse`
+
 ![new vm](./src/CP-share/1.png)
 	 
 `sudo apt install virtualbox-guest-dkms virtualbox-guest-x11`
@@ -108,7 +109,7 @@ macine run the following comands in your terminal once the vm starts.
     
 `mkdir -p ~/Share`
  ![new vm](./src/CP-share/4.png)
-    
+ 
  `sudo mount -t vboxsf "your Shared folder name" ~/Share`
  ![new vm](./src/CP-share/5.png)
  	  
