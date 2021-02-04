@@ -307,7 +307,7 @@ $ python -m awscli configure
 * Create an EC2 instance of the VM and launch the service
 
 
-## Step 5. Summary
+## Summary
 * The most challenging part was ansible configuration, and not having enough time to study the materail and put it togethr.The way I have prepared was and the project requirment are diffrent.
    
 
