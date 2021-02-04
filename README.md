@@ -280,7 +280,7 @@ $ python -m awscli configure
  ![OutPut](./src/kubernetes/2.png)   
    
 ### Part 4. Deploying dockerized web app using Ansible as a configuration management tool  
-[ansible-playbook.yaml](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/kubernetes.yaml)
+[ansible-deploy.yaml](https://github.com/simulationpoint/Cloud-DevOps-Engineer-Capstone-Project/blob/master/kubernetes.yaml)
    
 ## Step 4. Cloud implementation in AWS
 ### Part 1.
