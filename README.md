@@ -18,10 +18,9 @@
 	 ![new vm](./src/figure/1vm-new.png)
 	 
 	  ```
-	 Give a name you like and choose 
+	  Give a name you like and choose 
 	 									Type: Linux
 	 								 Version: Ubuntu(64-bit)
-	 
 	 ```
 	 ![new vm](./src/figure/2vm-name.png)
 	 
