@@ -1,6 +1,4 @@
 ![new vm](./src/intro/1.png)
-![new vm](./src/intro/2.png)
-
 
 ## [Instruction](https://docs.google.com/document/d/17OwlITE-yPWNj3Vi5RtQfz3ItvSkOfnbaVMnzlZyGTg)
 
@@ -299,11 +297,11 @@ configration.
 * It was quite a journey but at the end, when you see your app running on a distributed kubernetes cluster, there is realy nothing empowering than it!
 * My next plan is incorporatiing Ansible and AWS to deploy my web app.
 
-								## [CI/CD]() 
-								![OutPut](./src/kubernetes/2.png)
+## [CI/CD]() 
+![OutPut](./src/cicd.png)
 								
-								## [Cloud]() 
-								![OutPut](./src/kubernetes/2.png)
+## [Cloud]() 
+![OutPut](./src/cloud.png)
    
 
 
