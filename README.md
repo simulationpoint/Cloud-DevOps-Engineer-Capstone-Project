@@ -298,7 +298,7 @@ configration.
 * My next plan is incorporatiing Ansible and AWS to deploy my web app.
 
 ## [CI/CD]() 
-![OutPut](./src/cicd.png)
+![OutPut](./src/cicd.gif)
 								
 ## [Cloud]() 
 ![OutPut](./src/cloud.png)
