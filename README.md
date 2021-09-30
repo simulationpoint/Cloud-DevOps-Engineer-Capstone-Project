@@ -292,10 +292,9 @@ $ python -m awscli configure
 
 
 ## Summary
-* The most challenging part of thsi project was ansible configuration,I have installed it natively to my local machine. Tried using Ansible for everything, inlciding CD of kubernetes claster and pulling/pushing of docker image to docker hub.Yet i ended up using Jenkinsfile instead todo all the CI/CD pipeline 
-configration.
-* It was quite a journey but at the end, when you see your app running on a distributed kubernetes cluster, there is realy nothing empowering than it!
-* My next plan is incorporatiing Ansible and AWS to deploy my web app.
+* A key challenge in this project was configuring Ansible. It was installed on my local machine natively. I used Ansible to do all of the CI/CD pipeline, including the CD of the Kubernetes cluster and pulling/pushing of the Docker images to dockerhub, but in the end, I had to switch to Jenkinsfile. 
+* After all the challenges, it was so rewarding when I saw my app running on a distributed Kubernetes cluster!
+* I am planning to deploy my web application using Ansible and Amazon Web Services (AWS).
 
 ## [CI/CD]() 
 ![OutPut](./src/cicd.gif)
